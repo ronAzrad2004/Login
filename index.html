@@ -63,13 +63,20 @@
       border-radius: 15px;
     }
 
-    .contact input {
-      width: 80%;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      margin-bottom: 10px;
-      font-size: 1em;
+    .contact form input,
+    .contact form textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+    }
+
+    .contact form textarea {
+    resize: vertical;
+    min-height: 100px;
     }
 
     .contact button {
@@ -105,31 +112,33 @@
   </style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Welcome to My Website</h1>
-    <p>Hi, I'm Ron Azrad. Check out some of my projects below!</p>
+    <p>                                         Hi, I'm Ron Azrad.<br> 
+    Cybersecurity enthusiast and currently studying for a bachelor's degree in computer science, specializing in cybersecurity.</p>
 
     <div class="projects">
       <div class="project-box">
-        <a href="https://github.com/yourusername/project1" target="_blank">Project 1</a>
+        <a href="https://github.com/ronAzrad2004/port_scanner" target="_blank">Port Scanner - Personal project</a>
       </div>
       <div class="project-box">
-        <a href="https://github.com/yourusername/project2" target="_blank">Project 2</a>
+        <a href="https://github.com/ronAzrad2004/reverse_shell" target="_blank">Reverse Shell - Personal project</a>
       </div>
       <div class="project-box">
-        <a href="https://github.com/yourusername/project3" target="_blank">Project 3</a>
+        <a href="https://github.com/ronAzrad2004/assembler_demo" target="_blank">Assembler - University Project</a>
       </div>
-    </div>
-
-    <div class="contact">
-      <h2>Leave Your Contact Info</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required /><br><br>
-        <input type="tel" placeholder="Your Phone" required /><br><br>
-        <input type="email" placeholder="Your Email" required /><br><br>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+</div>
+    
+<div class="contact">
+  <h2>Leave Your Contact Info</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required /><br><br>
+    <input type="tel" placeholder="Your Phone" required /><br><br>
+    <input type="email" placeholder="Your Email" required /><br><br>
+    <textarea placeholder="Your Message" maxlength="200" required></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
     <div class="icons">
       <a href="https://github.com/yourusername" target="_blank" title="GitHub">
