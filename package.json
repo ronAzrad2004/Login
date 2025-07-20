@@ -1,6 +1,6 @@
 {
   "scripts": {
-  "start": "node sernder.js"
+  "start": "node sender.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
