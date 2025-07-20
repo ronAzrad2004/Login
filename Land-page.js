@@ -19,7 +19,7 @@ const blockedChars = ['<', '>', '"', "'", ';'];
     };
 
     try {
-      const res = await fetch("https://ronsapi.onrender.com/contact", {
+      const res = await fetch("https://sender-h832.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
