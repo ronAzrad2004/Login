@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #00ffe5;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      padding: 30px 0 10px;
+      border-bottom: 1px solid #00ffe5;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px 50px;
+    }
+
+    .project-box {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid #00ffe5;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffe5;
+    }
+
+    .project-box a {
+      color: #00ffe5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .back-link {
+      display: block;
+      margin: 30px auto;
+      color: #00ffe5;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+
+  <div class="project-grid">
+    <div class="project-box">
+      <i class="fas fa-network-wired fa-2x"></i>
+      <a href="https://github.com/ronAzrad2004/port_scanner" target="_blank">Port Scanner - Personal project</a>
+    </div>
+    <div class="project-box">
+      <i class="fas fa-terminal fa-2x"></i>
+      <a href="https://github.com/ronAzrad2004/reverse_shell" target="_blank">Reverse Shell - Personal project</a>
+    </div>
+    <div class="project-box">
+      <i class="fas fa-cogs fa-2x"></i>
+      <a href="https://github.com/ronAzrad2004/assembler_demo" target="_blank">Assembler - University project</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </div>
+
+  <a href="Landing-page.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+</body>
+</html>
