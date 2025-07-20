@@ -155,12 +155,12 @@
     
 <div class="contact">
   <h2>Leave Your Contact Info</h2>
-  <form action="https://sender-h832.onrender.com/contact" method="POST" onsubmit="sendData(event)">
-    <input class ="sanitized" type="text" placeholder="Your Name" maxlength="20" pattern="^[^\d]+$" required title="i assume that you name doesn't contain digits..."/><br><br>
-    <input class ="sanitized" type="tel" placeholder="Your Phone" maxlength="10" pattern="\d{10}" required title="Please enter exactuly 10 digits"/><br><br>
-    <input class ="sanitized" type="email" placeholder="Your Email" maxlength="40" required /><br><br>
-    <textarea class ="sanitized" placeholder="Your Message" maxlength="200" required></textarea><br><br>
-    <button type="submit" onclick="handleSubmit(event)">Submit</button>
+  <form action="https://sender-h832.onrender.com/contact"I method="POST" onsubmit="handleSubmit(event)">
+    <input class ="sanitized" name = "name" type="text" placeholder="Your Name" maxlength="20" pattern="^[^\d]+$" required title="i assume that you name doesn't contain digits..."/><br><br>
+    <input class ="sanitized" name = "phone" type="tel" placeholder="Your Phone" maxlength="10" pattern="\d{10}" required title="Please enter exactuly 10 digits"/><br><br>
+    <input class ="sanitized" name = "email" type="email" placeholder="Your Email" maxlength="40" required /><br><br>
+    <textarea class ="sanitized" name = "message" placeholder="Your Message" maxlength="200" required></textarea><br><br>
+    <button type="submit">Submit</button>
   </form>
 </div>
 
@@ -171,14 +171,14 @@
       <a href="https://www.linkedin.com/in/ron-azrad-b1471a312/" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://yourgithub.io/cv.pdf" target="_blank" title="CV">
+      <a href="https://drive.google.com/file/d/15Yx3T5MTxdM-qAmU7JygciPpZfynlpDT/view" target="_blank" title="CV">
         <i class="fas fa-file-alt"></i>
       </a>
-      <a href="projects-page.html" target="_blank" title="Projects">
+      <a href="projects-page.html" title="Projects">
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
   </div>
-  <script src="Land-page.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
