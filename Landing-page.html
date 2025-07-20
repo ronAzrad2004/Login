@@ -155,26 +155,26 @@
     
 <div class="contact">
   <h2>Leave Your Contact Info</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required /><br><br>
-    <input type="tel" placeholder="Your Phone" required /><br><br>
-    <input type="email" placeholder="Your Email" required /><br><br>
-    <textarea placeholder="Your Message" maxlength="200" required></textarea><br><br>
+  <form action="http://localhost:3000/contact" method="POST" onsubmit="sendData(event)">
+    <input class ="sanitized" type="text" placeholder="Your Name" maxlength="20" pattern="^[^\d]+$" required title="i assume that you name doesn't contain digits..."/><br><br>
+    <input class ="sanitized" type="tel" placeholder="Your Phone" maxlength="10" pattern="\d{10}" required title="Please enter exactuly 10 digits"/><br><br>
+    <input class ="sanitized" type="email" placeholder="Your Email" maxlength="40" required /><br><br>
+    <textarea class ="sanitized" placeholder="Your Message" maxlength="200" required></textarea><br><br>
     <button type="submit" onclick="handleSubmit(event)">Submit</button>
   </form>
 </div>
 
     <div class="icons">
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+      <a href="https://github.com/ronAzrad2004/" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/ron-azrad-b1471a312/" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
       <a href="https://yourgithub.io/cv.pdf" target="_blank" title="CV">
         <i class="fas fa-file-alt"></i>
       </a>
-      <a href="https://yourgithub.io/anotherpage.html" target="_blank" title="Projects">
+      <a href="projects-page.html" target="_blank" title="Projects">
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
