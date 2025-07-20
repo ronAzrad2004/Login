@@ -1,3 +1,3 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    alert("Form submitted!");
-});
+function handleSubmit(event){
+    alert("Form submited");
+}
