@@ -23,9 +23,11 @@
 
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       padding: 0 20px 50px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .project-box {
@@ -33,6 +35,8 @@
       border: 1px solid #00ffe5;
       border-radius: 15px;
       padding: 20px;
+      position: relative;
+      overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -48,6 +52,18 @@
       font-size: 1.1em;
       display: block;
       margin-top: 10px;
+    }
+
+    .project-description {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      color: #ccc;
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+
+    .project-box:hover .project-description {
+      opacity: 1;
     }
 
     .back-link {
@@ -70,17 +86,29 @@
   <div class="project-grid">
     <div class="project-box">
       <i class="fas fa-network-wired fa-2x"></i>
-      <a href="https://github.com/ronAzrad2004/port_scanner" target="_blank">Port Scanner - Personal project</a>
+      <a href="https://github.com/ronAzrad2004/port_scanner" target="_blank">Port Scanner</a>
+      <p class="project-description">Multithreaded port scanner built in Python with custom banner grabbing logic.</p>
     </div>
     <div class="project-box">
       <i class="fas fa-terminal fa-2x"></i>
-      <a href="https://github.com/ronAzrad2004/reverse_shell" target="_blank">Reverse Shell - Personal project</a>
+      <a href="https://github.com/ronAzrad2004/reverse_shell" target="_blank">Reverse Shell</a>
+      <p class="project-description">Developed in python, unlike conventional implementations, this reverse shell is designed to operate over HTTP rather than raw TCP, making it less detectable in certain network environments. While it does not include persistent reconnection mechanisms, its protocol choice highlights an unconventional and stealthier approach to remote command execution.</p>
     </div>
     <div class="project-box">
       <i class="fas fa-cogs fa-2x"></i>
-      <a href="https://github.com/ronAzrad2004/assembler_demo" target="_blank">Assembler - University project</a>
+      <a href="https://github.com/ronAzrad2004/assembler_demo" target="_blank">Assembler</a>
+      <p class="project-description">Developed in C, this is university-level project built on Ubuntu that functions as a two-pass assembler. It is capable of reading assembly commands either directly from the terminal or via input files, offering flexibility in usage.</p>
     </div>
-    <!-- Add more projects as needed -->
+    <div class="project-box">
+      <i class="fas fa-code fa-2x"></i>
+      <a href="https://github.com/ronAzrad2004/nicoCipher" target="_blank">nichoCypher</a>
+      <p class="project-description">Custom cipher implementation for secure message encoding and decoding.</p>
+    </div>
+    <div class="project-box">
+      <i class="fas fa-shield-alt fa-2x"></i>
+      <a href="https://github.com/ronAzrad2004/color-recognition" target="_blank">Color Recognition</a>
+      <p class="project-description">Developed in Java, this project implements a highly accurate color recognition system capable of identifying and classifying 142 distinct colors. Its precision makes it well-suited for real-time image processing tasks.</p>
+    </div>
   </div>
 
   <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
