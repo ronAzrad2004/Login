@@ -1,6 +1,9 @@
 {
+  "name": "my-server",
+  "version": "1.0.0",
+  "main": "sender.js",
   "scripts": {
-  "start": "node sender.js"
+    "start": "node sender.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
